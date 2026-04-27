@@ -1,19 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
   <title id="title">Commercial Cleaning Team logo</title>
-  <desc id="desc">Commercial Cleaning Team wordmark with clean building and sparkle icon.</desc>
+  <desc id="desc">Commercial Cleaning Team wordmark with a clean building and subtle sparkle animation.</desc>
   <defs>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b7fab"/>
       <stop offset="1" stop-color="#2ca58d"/>
     </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset=".48" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="markClip">
+      <rect width="128" height="128" rx="24"/>
+    </clipPath>
+    <style>
+      .mark-shell { transform-origin: 90px 90px; animation: markPulse 5.5s ease-in-out infinite; }
+      .shine { animation: sweep 4.8s ease-in-out infinite; opacity: .75; }
+      .spark { transform-origin: 122px 75px; animation: sparkle 2.8s ease-in-out infinite; }
+      .wordmark { animation: settle 700ms ease-out both; }
+      @keyframes markPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.025); }
+      }
+      @keyframes sweep {
+        0%, 38% { transform: translateX(-160px) skewX(-18deg); opacity: 0; }
+        52% { opacity: .7; }
+        72%, 100% { transform: translateX(170px) skewX(-18deg); opacity: 0; }
+      }
+      @keyframes sparkle {
+        0%, 100% { transform: scale(.92) rotate(0deg); opacity: .72; }
+        45% { transform: scale(1.16) rotate(8deg); opacity: 1; }
+      }
+      @keyframes settle {
+        from { transform: translateX(-8px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .mark-shell, .shine, .spark, .wordmark { animation: none; }
+      }
+    </style>
   </defs>
   <rect width="720" height="180" rx="24" fill="#ffffff"/>
-  <g transform="translate(26 26)">
+  <g class="mark-shell" transform="translate(26 26)">
     <rect width="128" height="128" rx="24" fill="url(#mark)"/>
+    <g clip-path="url(#markClip)">
+      <rect class="shine" x="-80" y="0" width="48" height="132" fill="url(#shine)"/>
+    </g>
     <path d="M34 93V42h24v51H34Zm36 0V60h24v33H70Zm-44 12h78" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M96 31l5 13 13 5-13 5-5 13-5-13-13-5 13-5 5-13Z" fill="#ffffff"/>
+    <path class="spark" d="M96 31l5 13 13 5-13 5-5 13-5-13-13-5 13-5 5-13Z" fill="#ffffff"/>
   </g>
-  <text x="180" y="78" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#14213d">Commercial Cleaning</text>
-  <text x="180" y="126" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#0b7fab">Team</text>
-  <text x="430" y="126" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#5f6b7a">commercialcleaningteam.co</text>
+  <g class="wordmark">
+    <text x="180" y="78" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#14213d">Commercial Cleaning</text>
+    <text x="180" y="126" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#0b7fab">Team</text>
+    <text x="430" y="126" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#5f6b7a">commercialcleaningteam.co</text>
+  </g>
 </svg>
