@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
   <title id="title">Commercial Cleaning Team logo</title>
-  <desc id="desc">Commercial Cleaning Team wordmark with a clean building and subtle sparkle animation.</desc>
+  <desc id="desc">Commercial Cleaning Team wordmark with an office building, cleaning squeegee, floor shine, and sparkle mark.</desc>
   <defs>
     <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b7fab"/>
@@ -12,47 +12,67 @@
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="markClip">
-      <rect width="128" height="128" rx="24"/>
+      <rect width="136" height="136" rx="25"/>
     </clipPath>
     <style>
-      .mark-shell { transform-origin: 90px 90px; animation: markPulse 5.5s ease-in-out infinite; }
+      .mark-shell { transform-origin: 94px 94px; animation: markPulse 5.5s ease-in-out infinite; }
       .shine { animation: sweep 4.8s ease-in-out infinite; opacity: .75; }
-      .spark { transform-origin: 122px 75px; animation: sparkle 2.8s ease-in-out infinite; }
+      .spark { transform-origin: 111px 39px; animation: sparkle 2.8s ease-in-out infinite; }
+      .squeegee { transform-origin: 80px 83px; animation: cleanSweep 4.8s ease-in-out infinite; }
       .wordmark { animation: settle 700ms ease-out both; }
       @keyframes markPulse {
         0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.025); }
+        50% { transform: scale(1.02); }
       }
       @keyframes sweep {
-        0%, 38% { transform: translateX(-160px) skewX(-18deg); opacity: 0; }
+        0%, 38% { transform: translateX(-165px) skewX(-18deg); opacity: 0; }
         52% { opacity: .7; }
-        72%, 100% { transform: translateX(170px) skewX(-18deg); opacity: 0; }
+        72%, 100% { transform: translateX(175px) skewX(-18deg); opacity: 0; }
       }
       @keyframes sparkle {
         0%, 100% { transform: scale(.92) rotate(0deg); opacity: .72; }
-        45% { transform: scale(1.16) rotate(8deg); opacity: 1; }
+        45% { transform: scale(1.14) rotate(8deg); opacity: 1; }
+      }
+      @keyframes cleanSweep {
+        0%, 100% { transform: translateX(0) rotate(0deg); }
+        45% { transform: translateX(4px) rotate(-2deg); }
       }
       @keyframes settle {
         from { transform: translateX(-8px); opacity: 0; }
         to { transform: translateX(0); opacity: 1; }
       }
       @media (prefers-reduced-motion: reduce) {
-        .mark-shell, .shine, .spark, .wordmark { animation: none; }
+        .mark-shell, .shine, .spark, .squeegee, .wordmark { animation: none; }
       }
     </style>
   </defs>
-  <rect width="720" height="180" rx="24" fill="#ffffff"/>
-  <g class="mark-shell" transform="translate(26 26)">
-    <rect width="128" height="128" rx="24" fill="url(#mark)"/>
+  <rect width="760" height="190" rx="24" fill="#ffffff"/>
+  <g class="mark-shell" transform="translate(26 27)">
+    <rect width="136" height="136" rx="25" fill="url(#mark)"/>
     <g clip-path="url(#markClip)">
-      <rect class="shine" x="-80" y="0" width="48" height="132" fill="url(#shine)"/>
+      <rect class="shine" x="-82" y="0" width="50" height="140" fill="url(#shine)"/>
     </g>
-    <path d="M34 93V42h24v51H34Zm36 0V60h24v33H70Zm-44 12h78" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <path class="spark" d="M96 31l5 13 13 5-13 5-5 13-5-13-13-5 13-5 5-13Z" fill="#ffffff"/>
+
+    <g opacity=".98">
+      <path d="M32 94V38h56v56" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M46 94V54h10v40M68 94V54h10v40" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+      <path d="M33 74h54" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".88"/>
+      <path d="M25 104h86" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/>
+      <path d="M39 116h58" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity=".82"/>
+    </g>
+
+    <g class="squeegee">
+      <path d="M86 78l28 31" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+      <path d="M74 68h47" stroke="#14213d" stroke-width="10" stroke-linecap="round"/>
+      <path d="M76 68h43" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <path class="spark" d="M108 24l5 13 13 5-13 5-5 13-5-13-13-5 13-5 5-13Z" fill="#ffffff"/>
+    <path d="M116 72l3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z" fill="#ffffff" opacity=".82"/>
   </g>
   <g class="wordmark">
-    <text x="180" y="78" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#14213d">Commercial Cleaning</text>
-    <text x="180" y="126" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#0b7fab">Team</text>
-    <text x="430" y="126" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#5f6b7a">commercialcleaningteam.co</text>
+    <text x="188" y="80" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="800" fill="#14213d">Commercial Cleaning</text>
+    <text x="188" y="130" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="800" fill="#0b7fab">Team</text>
+    <text x="438" y="130" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#5f6b7a">commercialcleaningteam.co</text>
   </g>
 </svg>
