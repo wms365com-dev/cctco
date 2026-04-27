@@ -3,17 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Commercial Cleaning Services in Mississauga, Brampton, Oakville & Milton</title>
-  <meta name="description" content="Get commercial cleaning services in Mississauga, Brampton, Oakville, and Milton. Office cleaning, janitorial contracts, floor care, disinfection, day porter service, and post-construction cleaning.">
+  <title>Commercial Cleaning Team | Mississauga, Brampton, Oakville & Milton</title>
+  <meta name="description" content="Commercial Cleaning Team provides office cleaning, janitorial contracts, floor care, disinfection, day porter, and post-construction cleaning in Mississauga, Brampton, Oakville, and Milton.">
   <meta name="keywords" content="commercial cleaning services, office cleaning, janitorial services, cleaning company, commercial cleaners, office cleaners near me, floor cleaning, day porter, post construction cleaning, disinfection services">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://commercialcleaningteam.co/">
+  <link rel="alternate" media="only screen and (max-width: 767px)" href="https://commercialcleaningteam.co/mobile.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Commercial Cleaning Services in Mississauga, Brampton, Oakville & Milton">
+  <meta property="og:title" content="Commercial Cleaning Team | Mississauga, Brampton, Oakville & Milton">
   <meta property="og:description" content="Commercial cleaners serving Mississauga, Brampton, Oakville, and Milton offices, clinics, retail spaces, warehouses, condos, and multi-site facilities.">
   <meta property="og:url" content="https://commercialcleaningteam.co/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:image" content="https://commercialcleaningteam.co/assets/logo.svg">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/logo.svg">
+  <meta name="theme-color" content="#0b7fab">
+  <meta name="application-name" content="Commercial Cleaning Team">
   <style>
     :root {
       --ink: #14213d;
@@ -41,13 +46,14 @@
     header .wrap { min-height: 76px; }
     html { scroll-behavior: smooth; }
     .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; }
-    .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 8px; color: var(--white); background: linear-gradient(135deg, var(--brand), var(--accent)); font-weight: 900; }
+    .brand-logo { width: 320px; max-width: min(320px, 86vw); height: auto; display: block; }
+    .brand-mark { display: none; }
     nav { display: flex; align-items: center; gap: 20px; color: var(--muted); font-size: 15px; }
     nav a { white-space: nowrap; }
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border: 1px solid transparent; border-radius: 6px; background: var(--brand); color: var(--white); font-weight: 800; cursor: pointer; }
     .btn:hover { background: var(--brand-dark); }
     .btn.secondary { background: var(--white); color: var(--brand-dark); border-color: var(--line); }
-    .hero { min-height: calc(100vh - 116px); display: grid; align-items: center; padding: 68px 0; background: linear-gradient(90deg, rgba(20, 33, 61, .88), rgba(20, 33, 61, .62) 45%, rgba(20, 33, 61, .24)), url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80") center/cover; color: var(--white); }
+    .hero { min-height: calc(100vh - 116px); display: grid; align-items: center; padding: 68px 0; background: linear-gradient(90deg, rgba(20, 33, 61, .88), rgba(20, 33, 61, .62) 45%, rgba(20, 33, 61, .24)), url("/assets/hero-cleaning.svg") center/cover; color: var(--white); }
     .hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, 430px); gap: 48px; align-items: center; }
     .eyebrow { margin: 0 0 14px; color: #b8f0df; font-weight: 800; text-transform: uppercase; font-size: 13px; }
     h1 { max-width: 760px; margin: 0 0 20px; font-size: clamp(40px, 6vw, 72px); line-height: 1; }
@@ -89,7 +95,7 @@
     .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 0; margin: 24px 0 0; list-style: none; }
     .checklist li { padding: 12px 12px 12px 38px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); position: relative; }
     .checklist li::before { content: ""; position: absolute; left: 14px; top: 17px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
-    .photo { min-height: 460px; border-radius: 8px; background: url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80") center/cover; box-shadow: var(--shadow); }
+    .photo { min-height: 460px; border-radius: 8px; background: url("/assets/team-cleaning.svg") center/cover; box-shadow: var(--shadow); }
     .testimonial { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
     blockquote { margin: 0; padding: 26px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); color: var(--ink); }
     blockquote p { margin: 0 0 16px; font-size: 18px; }
@@ -125,7 +131,7 @@
       .topbar { font-size: 13px; }
       .brand { max-width: 100%; }
       .brand span:last-child { overflow-wrap: anywhere; }
-      .brand-mark { width: 38px; height: 38px; flex: 0 0 38px; }
+      .brand-mark { display: none; }
       nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
       nav a, nav a.btn { justify-content: center; min-width: 0; width: 100%; text-align: center; padding: 0 8px; }
       h1 { font-size: clamp(34px, 11vw, 46px); line-height: 1.04; }
@@ -159,10 +165,10 @@
 </script>
 </head>
 <body>
-  <div class="topbar"><div class="wrap"><span>Commercial cleaning for offices, medical, retail, industrial, and multi-site facilities</span><span>Mississauga | Brampton | Oakville | Milton | info@commercialcleaningteam.co</span></div></div>
-  <header><div class="wrap"><a class="brand" href="#"><span class="brand-mark">PC</span><span>Commercial Cleaning Team</span></a><nav aria-label="Main navigation"><a href="#services">Services</a><a href="#industries">Industries</a><a href="#process">Process</a><a href="#areas">Service Areas</a><a href="#faq">FAQ</a><a href="apply.html">Apply for Work</a><a href="#quote" class="btn">Free Quote</a></nav></div></header>
+  <div class="topbar"><div class="wrap"><span>CommercialCleaningTeam.co | Commercial cleaning for offices, clinics, retail, industrial, and multi-site facilities</span><span>Mississauga | Brampton | Oakville | Milton | info@commercialcleaningteam.co</span></div></div>
+  <header><div class="wrap"><a class="brand" href="#"><img class="brand-logo" src="/assets/logo.svg" alt="Commercial Cleaning Team"></a><nav aria-label="Main navigation"><a href="#services">Services</a><a href="#industries">Industries</a><a href="#process">Process</a><a href="#areas">Service Areas</a><a href="#faq">FAQ</a><a href="apply.html">Apply for Work</a><a href="#quote" class="btn">Free Quote</a></nav></div></header>
   <main>
-    <section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">Reliable janitorial contracts for growing businesses</p><h1>Commercial cleaning services in Mississauga, Brampton, Oakville, and Milton.</h1><p>Get a consistent, professionally managed cleaning program built around your building, schedule, traffic, and compliance needs.</p><div class="hero-actions"><a href="#quote" class="btn">Request a Walk-Through</a><a href="apply.html" class="btn secondary">Apply for Work</a></div><div class="trust-row"><div class="trust"><strong>24/7</strong><span>day porter, evening, and overnight options</span></div><div class="trust"><strong>100%</strong><span>custom scope built after a site visit</span></div><div class="trust"><strong>Insured</strong><span>trained teams with supervisor checks</span></div></div></div><aside class="quote-panel" id="quote"><h2>Get a free cleaning quote</h2><p>Tell us about your facility and we will follow up to schedule a walk-through.</p><form id="quoteForm"><input type="text" name="name" placeholder="Full name" aria-label="Full name" required><input type="email" name="email" placeholder="Business email" aria-label="Business email" required><input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number"><input type="text" name="company" placeholder="Company or property name" aria-label="Company or property name"><select name="facility" aria-label="Facility type"><option value="">Facility type</option><option>Office</option><option>Medical or dental</option><option>Retail or showroom</option><option>Industrial or warehouse</option><option>Condo or property management</option></select><div class="field-grid"><input type="text" name="city" placeholder="City / service area" aria-label="City or service area"><input type="text" name="squareFeet" placeholder="Approx. sq. ft." aria-label="Approximate square footage"></div><select name="frequency" aria-label="Cleaning frequency"><option value="">Cleaning frequency</option><option>Daily</option><option>Several times per week</option><option>Weekly</option><option>Monthly / periodic</option><option>One-time project</option></select><textarea name="message" placeholder="Tell us about the space, timing, and cleaning needs"></textarea><button class="btn" type="submit">Send Quote Request</button><div class="status" id="quoteStatus" role="status"></div></form></aside></div></section>
+    <section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">Reliable janitorial contracts for growing businesses</p><h1>Commercial Cleaning Team for Mississauga, Brampton, Oakville, and Milton.</h1><p>Get a consistent, professionally managed cleaning program built around your building, schedule, traffic, and compliance needs.</p><div class="hero-actions"><a href="#quote" class="btn">Request a Walk-Through</a><a href="apply.html" class="btn secondary">Apply for Work</a></div><div class="trust-row"><div class="trust"><strong>24/7</strong><span>day porter, evening, and overnight options</span></div><div class="trust"><strong>100%</strong><span>custom scope built after a site visit</span></div><div class="trust"><strong>Insured</strong><span>trained teams with supervisor checks</span></div></div></div><aside class="quote-panel" id="quote"><h2>Get a free cleaning quote</h2><p>Tell us about your facility and we will follow up to schedule a walk-through.</p><form id="quoteForm"><input type="text" name="name" placeholder="Full name" aria-label="Full name" required><input type="email" name="email" placeholder="Business email" aria-label="Business email" required><input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number"><input type="text" name="company" placeholder="Company or property name" aria-label="Company or property name"><select name="facility" aria-label="Facility type"><option value="">Facility type</option><option>Office</option><option>Medical or dental</option><option>Retail or showroom</option><option>Industrial or warehouse</option><option>Condo or property management</option></select><div class="field-grid"><input type="text" name="city" placeholder="City / service area" aria-label="City or service area"><input type="text" name="squareFeet" placeholder="Approx. sq. ft." aria-label="Approximate square footage"></div><select name="frequency" aria-label="Cleaning frequency"><option value="">Cleaning frequency</option><option>Daily</option><option>Several times per week</option><option>Weekly</option><option>Monthly / periodic</option><option>One-time project</option></select><textarea name="message" placeholder="Tell us about the space, timing, and cleaning needs"></textarea><button class="btn" type="submit">Send Quote Request</button><div class="status" id="quoteStatus" role="status"></div></form></aside></div></section>
     <section id="services" aria-labelledby="services-title"><div class="wrap"><div class="section-head"><h2 id="services-title">Commercial cleaning services built for recurring contracts</h2><p>From daily office cleaning to periodic floor care, each scope is documented so your team knows exactly what is handled and when.</p></div><div class="services"><article class="card"><h3>Office Cleaning</h3><p>Workstations, boardrooms, kitchens, washrooms, reception areas, waste removal, and touchpoint cleaning.</p></article><article class="card"><h3>Janitorial Service</h3><p>Daily, weekly, and overnight programs with supplies, checklists, and supervisor inspections.</p></article><article class="card"><h3>Floor Care</h3><p>Vacuuming, mopping, machine scrubbing, stripping, waxing, carpet extraction, and entrance mat care.</p></article><article class="card"><h3>Disinfection</h3><p>High-touch sanitizing for shared spaces, washrooms, kitchens, clinics, gyms, and busy public areas.</p></article><article class="card"><h3>Post-Construction</h3><p>Final cleans, dust removal, debris detailing, glass cleaning, and move-in ready project turnover.</p></article><article class="card"><h3>Day Porter</h3><p>On-site daytime support for lobbies, washrooms, lunchrooms, events, spills, and tenant requests.</p></article></div></div></section>
     <section class="band" id="industries"><div class="wrap"><div class="section-head"><h2>Cleaning programs for the spaces buyers actually manage</h2><p>Property managers, office administrators, clinic owners, and operations teams get a reliable partner who understands business hours, security, and standards.</p></div><div class="industries"><div class="industry">Professional Offices</div><div class="industry">Medical Clinics</div><div class="industry">Retail Centres</div><div class="industry">Warehouses</div><div class="industry">Condominiums</div><div class="industry">Schools</div><div class="industry">Restaurants</div><div class="industry">Dealerships</div></div></div></section>
     <section><div class="wrap split"><div><div class="section-head"><h2>What gets cleaned in a typical office program</h2><p>We build the final checklist after seeing your site, but most office contracts include the high-impact details that staff and visitors notice first.</p></div><ul class="checklist"><li>Reception and lobby surfaces</li><li>Boardrooms and meeting spaces</li><li>Desks, ledges, and workstations</li><li>Kitchenettes and lunchrooms</li><li>Washrooms and dispensers</li><li>Floors, carpets, and baseboards</li><li>Garbage and recycling removal</li><li>Doors, glass, vents, and touchpoints</li></ul></div><div class="photo" role="img" aria-label="Professional cleaner preparing an office space"></div></div></section>
@@ -183,10 +189,11 @@
           "name": "Commercial Cleaning Team",
           "url": "https://commercialcleaningteam.co/",
           "email": "info@commercialcleaningteam.co",
-          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+          "image": "https://commercialcleaningteam.co/assets/logo.svg",
+          "logo": "https://commercialcleaningteam.co/assets/logo.svg",
           "priceRange": "$$",
           "areaServed": ["Mississauga", "Brampton", "Oakville", "Milton"],
-          "description": "Commercial cleaning company providing office cleaning, janitorial services, floor care, disinfection, day porter service, and post-construction cleaning."
+          "description": "Commercial Cleaning Team provides commercial cleaning, office cleaning, janitorial services, floor care, disinfection, day porter service, and post-construction cleaning in Mississauga, Brampton, Oakville, and Milton."
         },
         {
           "@type": "Service",
