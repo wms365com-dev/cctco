@@ -29,6 +29,28 @@ app.use(compression());
 app.use(morgan('tiny'));
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true, limit: '1mb' }));
+function isMobileUserAgent(userAgent = '') {
+  return /Android|iPhone|iPad|iPod|IEMobile|Opera Mini|Mobile/i.test(userAgent);
+}
+
+app.use((req, res, next) => {
+  if (!['GET', 'HEAD'].includes(req.method) || req.path.startsWith('/api/')) {
+    return next();
+  }
+
+  const mobile = isMobileUserAgent(req.get('user-agent'));
+  const pathName = req.path.toLowerCase();
+  const suffix = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+
+  if (mobile && (pathName === '/' || pathName === '/index.html')) {
+    return res.redirect(302, '/mobile.html' + suffix);
+  }
+  if (mobile && pathName === '/apply.html') {
+    return res.redirect(302, '/apply-mobile.html' + suffix);
+  }
+  next();
+});
+
 app.use(express.static(__dirname));
 
 const storage = multer.diskStorage({
