@@ -150,7 +150,7 @@
     <section><div class="wrap"><div class="section-head"><h2>Built to earn long-term trust</h2><p>Contract buyers need more than a low price. They need a cleaning company that communicates, shows up, and fixes issues quickly.</p></div><div class="testimonial"><blockquote><p>"The team is reliable, detailed, and flexible whenever our office schedule changes. It is the first cleaning company we do not have to chase."</p><cite>Office Manager, Financial Services</cite></blockquote><blockquote><p>"Their supervisor checks and communication made the transition easy across our multi-tenant property. The building looks consistently better."</p><cite>Property Manager, Commercial Building</cite></blockquote></div></div></section>
     <section class="final-cta"><div class="wrap"><h2>Ready to price your commercial cleaning contract?</h2><p>Call or request a quote and get pricing for your building, schedule, and cleaning scope.</p><a href="#quote" class="btn">Get My Cleaning Quote</a></div></section>
   </main>
-  <footer><div class="wrap"><span>Commercial Cleaning Team</span><span>Office cleaning | Janitorial | Floor care | Hiring cleaners</span></div></footer>
+  <footer><div class="wrap"><span>Copyright &copy; <span class="year"></span> Commercial Cleaning Team</span><span>Office cleaning | Janitorial | Floor care | Hiring cleaners</span></div></footer>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -189,6 +189,8 @@
     }
   </script>
   <script>
+    document.querySelectorAll('.year').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
     async function submitJson(form, endpoint, statusEl) {
       statusEl.textContent = 'Sending...';
       const data = Object.fromEntries(new FormData(form).entries());
